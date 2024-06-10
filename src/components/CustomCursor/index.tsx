@@ -62,8 +62,11 @@ const CustomCursor = () => {
           positionRef.current.destinationY += distanceY;
         }
       }
-      cursorSm.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
-      cursorLg.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
+      if(!cursorSm.current || !cursorLg.current)
+        return;
+
+      (cursorSm.current as any).style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
+      (cursorLg.current as any).style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
     };
     followMouse();
   }, []);
