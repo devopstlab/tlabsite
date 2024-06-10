@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import {useState} from 'react';
 
-export default function DropDown({children}) {
+export default function DropDown({children }: any) {
   // Mobile Toggle
   const [mobileToggle, setMobileToggle] = useState(false);
   const handelMobileToggle = () => {
