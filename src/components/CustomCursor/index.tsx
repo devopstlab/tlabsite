@@ -63,9 +63,12 @@ const CustomCursor = () => {
         }
       }
       
-      
+      if (cursorLg.current && cursorSm.current) {
+
       (cursorSm.current as any).style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
       (cursorLg.current as any).style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
+
+      }
     };
     followMouse();
   }, []);
