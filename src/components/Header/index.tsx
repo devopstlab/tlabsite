@@ -47,114 +47,13 @@ export default function Header({ variant }:any) {
                     className="cs-nav_list"
                     style={{ display: `${mobileToggle ? 'block' : 'none'}` }}
                   >
-                    <li className="menu-item-has-children">
-                      <Link href="/" onClick={() => setMobileToggle(false)}>
-                        Home
-                      </Link>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link href="/" onClick={() => setMobileToggle(false)}>
-                              Main Home
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="photography-agency"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Photography Agency
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="creative-portfolio"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Creative Portfolio
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="digital-agency"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Digital Agency
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="marketing-agency"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Marketing Agency
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="freelancer-agency"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Freelancer Agency
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="architecture-agency"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Architecture Agency
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="creative-solution"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Creative Solution
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="personal-portfolio"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Personal Portfolio
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="showcase-portfolio"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Showcase Portfolio
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="case-study-showcase"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Case Study Showcase
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="video-showcase"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Video Showcase
-                            </Link>
-                          </li>
-                        </ul>
-                      </DropDown>
-                    </li>
+                    
                     <li>
                       <Link
                         href="about"
                         onClick={() => setMobileToggle(false)}
                       >
-                        About
+                        Somos Tlab
                       </Link>
                     </li>
                     <li className="menu-item-has-children">
@@ -162,7 +61,7 @@ export default function Header({ variant }:any) {
                         href="service"
                         onClick={() => setMobileToggle(false)}
                       >
-                        Services
+                        Soluciones
                       </Link>
                       <DropDown>
                         <ul>
@@ -171,7 +70,7 @@ export default function Header({ variant }:any) {
                               href="service"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Services
+                              Verticales tecnológicas
                             </Link>
                           </li>
                           <li>
@@ -179,114 +78,28 @@ export default function Header({ variant }:any) {
                               href="/service/service-details"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Service Details
+                              Servicios
                             </Link>
                           </li>
                         </ul>
                       </DropDown>
                     </li>
-                    <li className="menu-item-has-children">
+                    <li >
                       <Link
                         href="portfolio"
                         onClick={() => setMobileToggle(false)}
                       >
-                        Portfolio
+                        Nuestras marcas
                       </Link>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link
-                              href="portfolio"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Portfolio
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="portfolio/portfolio-details"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Portfolio Details
-                            </Link>
-                          </li>
-                        </ul>
-                      </DropDown>
+                      
                     </li>
-                    <li className="menu-item-has-children">
+                    <li >
                       <Link href="blog" onClick={() => setMobileToggle(false)}>
-                        Blog
+                        TBuilder
                       </Link>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link
-                              href="blog"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Blog
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="blog/blog-details"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Blog Details
-                            </Link>
-                          </li>
-                        </ul>
-                      </DropDown>
+                      
                     </li>
-                    <li className="menu-item-has-children">
-                      <Link href="/" onClick={() => setMobileToggle(false)}>
-                        Pages
-                      </Link>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link
-                              href="/contact"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Contact
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/team"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Team
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/team/team-details"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Team Details
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/case-study/case-study-details"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Case Study Details
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/faq"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              FAQ
-                            </Link>
-                          </li>
-                        </ul>
-                      </DropDown>
-                    </li>
+                    
                   </ul>
                   <span
                     className={
