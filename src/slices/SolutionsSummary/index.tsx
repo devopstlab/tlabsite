@@ -17,7 +17,8 @@ export type SolutionsSummaryProps =
  */
 const SolutionsSummary = ({ slice }: SolutionsSummaryProps): JSX.Element => {
   return (
-    <section className="container"
+    <section
+      className="container"
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
@@ -29,32 +30,79 @@ const SolutionsSummary = ({ slice }: SolutionsSummaryProps): JSX.Element => {
           <Div className="row">
             <Div className="col-xl-4">
               <SectionHeading
-                title="Services we can help you with"
-                subtitle="What Can We Do"
-                btnText="See All Services"
-                btnLink="/service"
+                title={"Nuestra huella"}
+                subtitle="Innovación que transforma"
+                btnText="Todas nuestras soluciones"
+                btnLink="/services"
               />
               <Spacing lg="90" md="45" />
             </Div>
             <Div className="col-xl-8">
               <Div className="row">
-              {slice.items.map((item, index) => (
-              <>
-                {index < 2 && <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>}
-                <Div className="col-lg-3 col-sm-6">
-              
-                <Card
+                {slice.items.map((item, index) => {
+                  if(index <= 3)
+                  return (
+                    <>
+                      {index < 2 && (
+                        <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
+                      )}
+                      <Div className="col-lg-3 col-sm-6">
+                        <Card
                           title={item.item_title as any}
                           link={item.item_link as any}
-                          img={<PrismicNextImage field={item.item_image} alt={item.item_image.alt as any}/> as any}
+                        
+                          img={
+                            (
+                              <PrismicNextImage
+                                field={item.item_image}
+                                alt={item.item_image.alt as any}
+                              />
+                            ) as any
+                          }
                         />
-                  <Spacing lg="0" md="30" />
-                </Div>
-                {index >= 2 && <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>}
-                </>
-              ))}
-              
+                        <Spacing lg="0" md="30" />
+                      </Div>
+                      {index >= 2 && (
+                        <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
+                      )}
+                    </>
+                  );
+                })}
               </Div>
+              </Div>
+              <Div className="col-xl-8">
+{/* 
+              <Div className="row">
+                {slice.items.map((item, index) => {
+                  if(index >= 4)
+                  return (
+                    <>
+                      {index < 2 && (
+                        <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
+                      )}
+                      <Div className="col-lg-3 col-sm-6">
+                        <Card
+                          title={item.item_title as any}
+                          link={item.item_link as any}
+                          img={
+                            (
+                              <PrismicNextImage
+                                field={item.item_image}
+                                alt={item.item_image.alt as any}
+                              />
+                            ) as any
+                          }
+                        />
+                        <Spacing lg="0" md="30" />
+                      </Div>
+                      {index >= 2 && (
+                        <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
+                      )}
+                    </>
+                  );
+                })}
+              </Div> */}
+             
             </Div>
           </Div>
         </Div>

@@ -2,7 +2,7 @@ import Button from "@/components/Button";
 import Div from "@/components/Div";
 import VerticalLinks from "@/components/VerticalLinks";
 import {Content} from "@prismicio/client";
-import {PrismicText, SliceComponentProps} from "@prismicio/react";
+import {PrismicRichText, PrismicText, SliceComponentProps} from "@prismicio/react";
 import './hero.scss';
 
 /**
@@ -45,7 +45,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             <Div className="cs-hero_info">
               <Div> <Button btnLink={slice.primary.button_link} btnText={slice.primary.button_label} /></Div>
               <Div>
-                <Div className="cs-hero_subtitle"><PrismicText field={slice.primary.body} /></Div>
+                <Div className="cs-hero_subtitle"><PrismicRichText field={slice.primary.body} /></Div>
               </Div>
             </Div>
           </Div>

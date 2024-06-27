@@ -20,7 +20,7 @@ const LogoList = ({ slice }: LogoListProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      <Spacing lg="150" md="40" />
+      <Spacing lg="100" md="40" />
       <Div className="cs-partner_logo_wrap">
         {slice.items.map((item, index) => (
           <div className="cs-partner_logo" key={index}>

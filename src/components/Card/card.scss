@@ -2,13 +2,19 @@
   position: relative;
   border-radius: 15px;
   display: block;
+  min-height: 180px;
+  overflow: hidden;
+  display: flex;
   
   &:hover {
     filter: drop-shadow(0px 0px 30px rgba(0, 133, 104, 0.5));
   }
   img {
     width: 100%;
+    height: 100%;
     border-radius: inherit;
+    height: auto;
+    object-fit: cover;  
   }
   .cs-card_overlay {
     position: absolute;
@@ -49,7 +55,12 @@
   }
 }
 
+
+
 @media screen and (max-width: 1199px) {
+  .cs-card.cs-style1  {
+    min-height: 200px;
+  }
   .cs-card.cs-style1 .cs-card_title {
     font-size: 24px;
   }
@@ -60,5 +71,10 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
+  }
+}
+@media screen and (max-width: 999px) {
+  .cs-card.cs-style1  {
+    min-height: 400px;
   }
 }
