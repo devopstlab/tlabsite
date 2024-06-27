@@ -16,7 +16,7 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
 const Hero = ({ slice }: HeroProps): JSX.Element => {
   const scrollDownId = " #scroll-down";
   const socialLinksHeading = "Seguinos en redes";
-  const heroSocialLinks = [{name: "Facebook", links: "https://www.facebook.com/"}, {name: "Instagram", links: "https://www.instagram.com/"}] as any;
+  const heroSocialLinks = [{name: "Linkedin", links: "https://www.linkedin.com/"}, {name: "Instagram", links: "https://www.instagram.com/"}] as any;
   return (
       // <Div
       //   className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1"

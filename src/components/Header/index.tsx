@@ -61,7 +61,7 @@ export default function Header({ variant }:any) {
                         href="service"
                         onClick={() => setMobileToggle(false)}
                       >
-                        Soluciones
+                        Sectores
                       </Link>
                       <DropDown>
                         <ul>
@@ -71,6 +71,7 @@ export default function Header({ variant }:any) {
                               onClick={() => setMobileToggle(false)}
                             >
                               Verticales tecnológicas
+                              <p style={{fontSize: '10px', opacity: '0.5', lineHeight: '1.3', textTransform:'lowercase'}}>Nuestras áreas de especialización tecnologicas en diversas industrias y sectores de la sociedad.</p>
                             </Link>
                           </li>
                           <li>
@@ -78,7 +79,8 @@ export default function Header({ variant }:any) {
                               href="/service/service-details"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Servicios
+                              Servicios y soluciones
+                              <p style={{fontSize: '10px', opacity: '0.5', lineHeight: '1.3', textTransform:'lowercase'}}>Descubre nuestra amplia gama de servicios y soluciones personalizadas diseñadas para impulsar la innovación.</p>
                             </Link>
                           </li>
                         </ul>
@@ -93,11 +95,42 @@ export default function Header({ variant }:any) {
                       </Link>
                       
                     </li>
-                    <li >
+                    <li className="menu-item-has-children">
                       <Link href="blog" onClick={() => setMobileToggle(false)}>
                         TBuilder
                       </Link>
-                      
+                      <DropDown>
+                        <ul>
+                          <li>
+                            <Link
+                              href="service"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Oportunidades de inversión
+                              <p style={{fontSize: '10px', opacity: '0.5', lineHeight: '1.3', textTransform:'lowercase'}}>Accede a proyectos y startups en busca de financiación.</p>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/service/service-details"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Portafolio de Proyectos
+                              <p style={{fontSize: '10px', opacity: '0.5', lineHeight: '1.3', textTransform:'lowercase'}}>Explora las soluciones y tecnologías que hemos desarrollado y financiado.</p>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/service/service-details"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Proceso de Inversión
+                              <p style={{fontSize: '10px', opacity: '0.5', lineHeight: '1.3', textTransform:'lowercase'}}>Conoce cómo trabajamos y cómo puedes unirte a nuestras iniciativas de venture capital.</p>
+                            </Link>
+                            
+                          </li>
+                        </ul>
+                      </DropDown>
                     </li>
                     
                   </ul>
