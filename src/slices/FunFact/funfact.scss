@@ -4,6 +4,7 @@
 ----------------------------------------------------------------*/
 .cs-funfact_wrap {
   display: flex;
+  align-items: center;
   background: linear-gradient(267.18deg, #161616 0%, #080808 100%);
   border-radius: 15px;
   padding: 60px 80px;
@@ -57,7 +58,12 @@
   h2 {
     font-size: 50px;
     margin-bottom: 20px;
+    p {
+    
+      line-height: 1.3em;
+    }
   }
+  
   p {
     margin-bottom: 0;
     line-height: 1.75em;
@@ -227,3 +233,4 @@
     padding: 40px 30px;
   }
 }
+
