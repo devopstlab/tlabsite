@@ -20,7 +20,11 @@ const LogoList = ({ slice }: LogoListProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      <Spacing lg="100" md="40" />
+      <Spacing lg="180" md="40" />
+      
+      <h2 className="cs-partner_heading">Empresas y proyectos creados en Tlab</h2>
+      
+      
       <Div className="cs-partner_logo_wrap">
         {slice.items.map((item, index) => (
           <div className="cs-partner_logo" key={index}>

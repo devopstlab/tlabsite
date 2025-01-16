@@ -35,7 +35,7 @@ export function WordCloud() {
           options={{
             enableTooltip: false,
             colors: ["#0AF2D155", "#0AF2D188", "#0AF2D1FF"],
-            fontFamily: "__Poppins_51dd11",
+            fontFamily: `Trebuchet MS`,
             fontSizes: [12, 60],
             fontStyle: "normal",
             fontWeight: "normal",

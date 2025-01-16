@@ -15,7 +15,7 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
 });
 
-const poppins = Poppins({
+export const poppins = Poppins({
   weight: ['400', '600', '700'],
   style: "normal",
   subsets: ["latin"],
