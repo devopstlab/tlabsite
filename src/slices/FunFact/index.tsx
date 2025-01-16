@@ -38,7 +38,7 @@ const FunFact = ({ slice }: FunFactProps): JSX.Element => {
             <h2>
               <PrismicRichText field={slice.primary.heading} />
             </h2>
-            <PrismicRichText field={slice.primary.body} />
+            {slice.primary.body &&<PrismicRichText field={slice.primary.body} />}
           </Div>
         </Div>
         <Div className="cs-funfact_right">
