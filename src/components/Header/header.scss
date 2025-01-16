@@ -183,10 +183,17 @@
     transition: all 0.4s ease;
   }
   .cs-side_header_heading {
-    font-size: 22px;
+    font-size: 25px;
     line-height: 1.4em;
     margin: 0;
   }
+
+  .cs-side_header_heading .sub{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1em;
+  }
+
   .cs-side_header_title {
     font-size: 16px;
     text-transform: uppercase;

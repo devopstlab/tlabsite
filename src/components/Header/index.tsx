@@ -1,7 +1,6 @@
 "use client"
 import {useEffect, useState} from 'react';
 import ContactInfoWidget from '../Widget/ContactInfoWidget';
-import Newsletter from '../Widget/Newsletter';
 import SocialWidget from '../Widget/SocialWidget';
 import './header.scss';
 
@@ -10,7 +9,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import FooterLogo from '../../app/assets/images/footer_logo.svg';
 import ImgLogo from '../../app/assets/images/logo.svg';
-
+//TODO: sacar a editor
 export default function Header({ variant }:any) {
   const [isSticky, setIsSticky] = useState(false);
   const [sideHeaderToggle, setSideHeaderToggle] = useState(false);
@@ -185,19 +184,21 @@ export default function Header({ variant }:any) {
           </Link>
           <Div className="cs-side_header_box">
             <h2 className="cs-side_header_heading">
-              Do you have a project in your <br /> mind? Keep connect us.
+            ¿Tiene un proyecto en mente?<br /><br /> <span className='cs-accent_color sub'>Conversemos y transformemos su visión en una realidad innovadora.</span>
+              
+              {/* Do you have a project in your <br /> mind? Keep connect us. */}
             </h2>
           </Div>
           <Div className="cs-side_header_box">
-            <ContactInfoWidget title="Contact Us" withIcon />
+            <ContactInfoWidget title="Contáctanos" withIcon />
           </Div>
-          <Div className="cs-side_header_box">
+          {/* <Div className="cs-side_header_box">
             <Newsletter
               title="Subscribe"
               subtitle="At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit."
               placeholder="example@gmail.com"
             />
-          </Div>
+          </Div> */}
           <Div className="cs-side_header_box">
             <SocialWidget />
           </Div>
