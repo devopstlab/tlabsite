@@ -10,7 +10,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import FooterLogo from '../../app/assets/images/footer_logo.svg';
 import ImgLogo from '../../app/assets/images/logo.svg';
-import DropDown from './DropDown';
 
 export default function Header({ variant }:any) {
   const [isSticky, setIsSticky] = useState(false);
@@ -42,7 +41,7 @@ export default function Header({ variant }:any) {
                 </Link>
               </Div>
               <Div className="cs-main_header_center">
-                <Div className="cs-nav cs-primary_font cs-medium">
+                {/* <Div className="cs-nav cs-primary_font cs-medium">
                   <ul
                     className="cs-nav_list"
                     style={{ display: `${mobileToggle ? 'block' : 'none'}` }}
@@ -144,7 +143,7 @@ export default function Header({ variant }:any) {
                   >
                     <span></span>
                   </span>
-                </Div>
+                </Div> */}
               </Div>
               <Div className="cs-main_header_right">
                 <Div className="cs-toolbox">

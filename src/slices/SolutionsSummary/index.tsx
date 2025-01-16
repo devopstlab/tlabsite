@@ -19,6 +19,7 @@ const SolutionsSummary = ({ slice }: SolutionsSummaryProps): JSX.Element => {
   return (
     <section
       className="container"
+      id="nuestra-huella"
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
